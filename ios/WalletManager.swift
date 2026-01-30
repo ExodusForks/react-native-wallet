@@ -273,7 +273,7 @@ extension WalletManager: PKAddPaymentPassViewControllerDelegate {
           addPaymentPassHandler(.completed, nil)
         } else {
           addPaymentPassHandler(.error, [
-            "errorMessage": "Could not add card. \(errorMessage))."
+            "errorMessage": "Could not add card. \(errorMessage)."
           ])
         }
       }
