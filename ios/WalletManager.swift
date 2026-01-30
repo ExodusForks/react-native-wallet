@@ -278,6 +278,7 @@ extension WalletManager: PKAddPaymentPassViewControllerDelegate {
         }
       }
       
+      addPassHandler = nil
       hideModal()
       addPaymentPassCompletionHandler = nil
       presentAddPaymentPassCompletionHandler = nil
