@@ -140,7 +140,7 @@ async function addCardToAppleWallet(
   issuerEncryptPayloadCallback: (nonce: string, nonceSignature: string, certificate: string[]) => Promise<IOSEncryptPayload>,
 ): Promise<TokenizationStatus> {
   if (Platform.OS === 'android') {
-    throw new Error('addCardToAppleWallet is not available on Andorid');
+    throw new Error('addCardToAppleWallet is not available on Android');
   }
 
   if (!Wallet) {
