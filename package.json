@@ -1,6 +1,6 @@
 {
-  "name": "@expensify/react-native-wallet",
-  "version": "0.1.15",
+  "name": "@exodus/react-native-wallet",
+  "version": "0.1.15-exodus0",
   "description": "A React Native module designed for seamless integration of Card Push Provisioning into Apple Wallet and Google Wallet, enabling easy and secure addition of payment cards directly from your application.",
   "source": "./src/index.tsx",
   "main": "lib/commonjs/index",
@@ -28,7 +28,6 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "npm run --workspace=@expensify/react-native-wallet-example",
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint . --ext .js,.ts,.tsx",
@@ -46,7 +45,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Expensify/react-native-wallet.git"
+    "url": "git+https://github.com/ExodusOSS/react-native-wallet.git"
   },
   "author": "Expensify, Inc.",
   "license": "MIT",
