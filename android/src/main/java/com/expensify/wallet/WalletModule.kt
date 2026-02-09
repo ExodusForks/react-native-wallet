@@ -121,6 +121,7 @@ class WalletModule internal constructor(context: ReactApplicationContext) :
   override fun checkWalletAvailability(promise: Promise) {
     tapAndPayClient.environment.addOnCompleteListener { task ->
       promise.resolve(task.isSuccessful)
+    }
   }
 
   @ReactMethod
