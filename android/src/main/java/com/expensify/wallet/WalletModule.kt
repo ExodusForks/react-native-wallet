@@ -214,6 +214,7 @@ class WalletModule internal constructor(context: ReactApplicationContext) :
         activity, pushTokenizeRequest, REQUEST_CODE_PUSH_TOKENIZE
       )
     } catch (e: java.lang.Exception) {
+      pendingPushTokenizePromise = null
       promise.reject(e)
     }
   }
@@ -244,6 +245,7 @@ class WalletModule internal constructor(context: ReactApplicationContext) :
         REQUEST_CODE_PUSH_TOKENIZE
       )
     } catch (e: java.lang.Exception) {
+      pendingPushTokenizePromise = null
       promise.reject(e)
     }
   }
